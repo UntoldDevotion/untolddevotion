@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untold Devotion Interactive — Original games. Meaningful apps.</title>
-<meta name="description" content="Untold Devotion Interactive is Lee and Kerry — two independent creators making original games and meaningful apps. Free to download. No ads. No in-app purchases. No data collection.">
+<meta name="description" content="Untold Devotion Interactive is Lee and Kerry — two independent creators making original games and meaningful apps. Free to download on Google Play.">
 <link rel="canonical" href="https://untolddevotion.com/">
 <meta name="theme-color" content="#05050A">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Untold Devotion Interactive">
 <meta property="og:title" content="Untold Devotion Interactive">
-<meta property="og:description" content="Original games. Meaningful apps. Free to download, with no ads, no in-app purchases and no data collection.">
+<meta property="og:description" content="Original games. Meaningful apps. Made by two independent creators.">
 <meta property="og:url" content="https://untolddevotion.com/">
-<meta property="og:image" content="https://untolddevotion.com/assets/brand/og-image.png">
+<meta property="og:image" content="https://untolddevotion.com/assets/brand/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/assets/brand/heart.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/brand/heart-512.png">
+<link rel="icon" href="/assets/brand/mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
   "@type": "Organization",
   "name": "Untold Devotion Interactive",
   "url": "https://untolddevotion.com/",
-  "logo": "https://untolddevotion.com/assets/brand/heart-512.png",
+  "logo": "https://untolddevotion.com/assets/brand/og-image.jpg",
   "description": "Independent studio founded by Lee and Kerry, making original games and meaningful apps.",
   "founder": [{"@type":"Person","name":"Lee"},{"@type":"Person","name":"Kerry"}]
 }
@@ -43,11 +43,8 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/">
-      <img src="/assets/brand/heart.svg" alt="" width="34" height="34">
-      <span>
-        <span class="brand-name">Untold Devotion</span><br>
-        <span class="brand-sub">Interactive</span>
-      </span>
+      <span class="brand-name">Untold Devotion</span>
+      <span class="brand-sub">Interactive</span>
     </a>
     <nav class="nav" aria-label="Main">
       <a href="/games/">Games</a>
@@ -59,19 +56,26 @@
 
 <main id="main">
 
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Independent Studio</p>
-        <h1>Made with<br><span class="gold">devotion.</span></h1>
-        <p class="lede">We're Lee and Kerry — two independent creators building original games and meaningful apps. One side challenges the mind. The other rewards the journey. Free to download, with no ads, no in-app purchases and nothing collected about you.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="/games/">Explore our games</a>
-          <a class="btn btn-ghost" href="/about/">Our story →</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <img src="/assets/brand/heart-512.png" alt="The Untold Devotion Interactive heart mark" width="512" height="512">
+  <section class="banner" aria-label="Untold Devotion Interactive">
+    <picture>
+      <source media="(max-width: 700px)" type="image/webp" srcset="/assets/brand/banner-mobile.webp">
+      <source media="(max-width: 700px)" srcset="/assets/brand/banner-mobile.jpg">
+      <source type="image/webp" srcset="/assets/brand/banner.webp">
+      <img src="/assets/brand/banner.jpg"
+           alt="Untold Devotion Interactive — a purple, star-lit world of puzzles on one side and a golden, sunlit path through woodland on the other"
+           width="2000" height="761" fetchpriority="high"
+           onerror="this.closest('.banner').remove()">
+    </picture>
+  </section>
+
+  <section class="hero" style="padding-block:clamp(40px,6vw,72px)">
+    <div class="wrap">
+      <p class="eyebrow">Independent Studio</p>
+      <h1 style="font-size:clamp(2.1rem,4.4vw,3.2rem);max-width:22ch">One side challenges the mind.<br><span class="gold">One side rewards the journey.</span></h1>
+      <p class="lede" style="font-size:1.2rem">We're Lee and Kerry — two independent creators building original games and meaningful apps. Quick, addictive puzzles on one side. Deeper progression adventures on the other.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/games/">Explore our games</a>
+        <a class="btn btn-ghost" href="/about/">Our story →</a>
       </div>
     </div>
   </section>
@@ -89,7 +93,7 @@
         <a class="card route-card" href="/games/">
           <p class="eyebrow" style="margin-bottom:10px">Games</p>
           <h3 style="font-family:var(--display);font-size:1.9rem;font-weight:600;margin-bottom:10px">Challenge and journey</h3>
-          <p style="margin-bottom:18px">Quick, addictive puzzles that make you stop and think. Deeper progression adventures where every step feels earned. Free, with nothing attached.</p>
+          <p style="margin-bottom:18px">Quick, addictive puzzles that make you stop and think. Deeper progression adventures where every step feels earned. Free to download.</p>
           <span class="route-link">See our games →</span>
         </a>
 
@@ -121,7 +125,7 @@
             <li>100 Levels</li>
             <li>Rated 3+</li>
             <li>Free</li>
-            <li>No ads</li>
+            <li>Ad-supported</li>
           </ul>
           <p class="lede" style="font-size:1rem;margin-bottom:20px">Every level gives you a simple instruction. Every level is quietly working against you. Five lives, one hundred hand-designed traps, and no second chances once you've spent them.</p>
           <div class="btn-row">
@@ -157,18 +161,18 @@
       <div class="grid grid-3">
         <div class="card">
           <div class="num">01</div>
-          <h3>Free, and actually free</h3>
-          <p>No ads interrupting a puzzle. No currency to top up. No timers nudging you toward a wallet. You download the game and you play the game.</p>
+          <h3>A reason to exist</h3>
+          <p>We don't build things because an algorithm says a category might perform well. Every project has to justify itself — memorable mechanics instead of empty repetition, progress that feels earned.</p>
         </div>
         <div class="card">
           <div class="num">02</div>
-          <h3>Nothing collected</h3>
-          <p>Our games collect no personal data and share nothing with third parties. There's no analytics SDK, no advertising ID, no account to create.</p>
+          <h3>Made by hand</h3>
+          <p>Every level is designed deliberately, not generated. If a puzzle is in the game, someone sat down and decided exactly how it should work — and how it should mislead you.</p>
         </div>
         <div class="card">
           <div class="num">03</div>
-          <h3>A reason to exist</h3>
-          <p>We don't build things because an algorithm says they might perform well. Memorable mechanics instead of empty repetition. Progress that feels earned.</p>
+          <h3>Straight with you</h3>
+          <p>Where a game is ad-supported we say so plainly, ask before any ad loads, and let you change that choice whenever you like. What we collect is set out in full in our <a href="/privacy/">privacy policy</a>.</p>
         </div>
       </div>
     </div>
@@ -224,11 +228,8 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="/">
-          <img src="/assets/brand/heart.svg" alt="" width="30" height="30">
-          <span>
-            <span class="brand-name" style="font-size:18px">Untold Devotion</span><br>
-            <span class="brand-sub">Interactive</span>
-          </span>
+          <span class="brand-name" style="font-size:19px">Untold Devotion</span>
+          <span class="brand-sub">Interactive</span>
         </a>
       </div>
       <nav class="footer-links" aria-label="Footer">
