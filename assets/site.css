@@ -107,9 +107,11 @@ a:hover { text-decoration: underline; }
 .banner {
   position: relative;
   width: 100%;
+  padding-block: 0;              /* overrides the global section padding */
   border-bottom: 1px solid var(--hairline);
   background: var(--midnight);
   overflow: hidden;
+  line-height: 0;                /* kills the inline-descender gap under the image */
 }
 .banner img {
   width: 100%; height: auto; display: block;
@@ -366,11 +368,35 @@ section { padding-block: clamp(56px, 8vw, 104px); }
   .hero-art img { width: min(220px, 55%); }
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .game-card { grid-template-columns: 1fr; justify-items: start; }
-  .nav { gap: 18px; font-size: 14px; }
-  .brand-sub { display: none; }
-  .brand-name { font-size: 17px; white-space: nowrap; }
-  .brand img { width: 28px; height: 28px; }
-  .site-header .wrap { gap: 14px; min-height: 60px; }
+  .nav { gap: 20px; font-size: 15px; }
+  .brand-name { font-size: 19px; letter-spacing: 0.05em; }
+}
+
+/* ---- Phone header: brand on its own line, nav as a full-width row ---- */
+@media (max-width: 760px) {
+  .site-header .wrap {
+    flex-direction: column; align-items: stretch;
+    gap: 0; min-height: 0; padding-block: 12px;
+  }
+  .brand { text-align: center; }
+  .brand-name { font-size: 20px; white-space: nowrap; }
+  .brand-sub { font-size: 9px; letter-spacing: 0.3em; }
+
+  .nav {
+    justify-content: center;
+    gap: 4px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--hairline);
+    font-size: 14px;
+  }
+  .nav a {
+    white-space: nowrap;          /* never break "Games & Apps" */
+    padding: 8px 12px;            /* comfortable tap target */
+    border-radius: 999px;
+    line-height: 1.2;
+  }
+  .nav a[aria-current="page"] { background: var(--surface); color: var(--cream); }
 }
 
 @media (max-width: 560px) {
@@ -378,8 +404,33 @@ section { padding-block: clamp(56px, 8vw, 104px); }
   .wrap { padding-inline: 18px; }
   .btn, .badge-store, .badge-soon { width: 100%; }
   .btn-row { gap: 10px; }
-  .game-card .art { width: 128px; height: 128px; border-radius: 26px; }
   .card { padding: 24px; }
+
+  /* Game / project cards: icon and text stack cleanly */
+  .game-card { padding: 24px; gap: 20px; border-radius: 18px; }
+  .game-card .art { width: 104px; height: 104px; border-radius: 24px; }
+  .game-card h3 { font-size: 1.45rem; }
+  .art-initial { font-size: 3rem; }
+  .teaser { font-size: 1.15rem; }
+
+  /* Chips wrap tidily instead of stretching the row */
+  .meta { gap: 6px; }
+  .meta li { font-size: 11px; padding: 4px 10px; }
+
+  .section-head { margin-bottom: 32px; }
+  .callout { padding: 22px 20px; }
+  .footer-grid { gap: 22px; }
+  .footer-links { gap: 4px 8px; font-size: 14px; }
+  .footer-links a { padding: 8px 10px; margin: -8px 0; }
+  .route-link { display: inline-block; padding: 6px 0; }
+  .footer-tagline { font-size: 1rem; margin-top: 20px; }
+}
+
+@media (max-width: 400px) {
+  .nav { gap: 0; }
+  .nav a { padding: 8px 9px; font-size: 13.5px; }
+  .wrap { padding-inline: 16px; }
+  .game-card .art { width: 88px; height: 88px; border-radius: 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
