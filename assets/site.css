@@ -262,6 +262,33 @@ section { padding-block: clamp(56px, 8vw, 104px); }
   border: 1px solid var(--hairline); color: var(--text-dim);
 }
 
+/* In-development card treatment */
+.art-placeholder {
+  position: relative;
+  background:
+    radial-gradient(120% 100% at 30% 20%, rgba(160,61,237,.32), transparent 60%),
+    linear-gradient(150deg, var(--deep-violet), var(--midnight));
+}
+.art-initial {
+  font-family: var(--display);
+  font-size: 4.2rem; font-weight: 600; line-height: 1;
+  color: var(--gold); opacity: .85;
+  text-shadow: 0 2px 18px rgba(215,185,37,.25);
+}
+.meta-dev { border-color: rgba(215,185,37,.45) !important; color: var(--warm-gold) !important; }
+.teaser {
+  font-family: var(--display);
+  font-size: 1.32rem; line-height: 1.35; color: var(--warm-gold);
+  margin: 0 0 12px;
+}
+
+/* Footer tagline */
+.footer-tagline {
+  font-family: var(--display);
+  font-size: 1.06rem; color: var(--cream);
+  margin: 24px 0 0; letter-spacing: .01em;
+}
+
 /* Screenshots */
 .shots {
   display: grid; grid-auto-flow: column; grid-auto-columns: minmax(232px, 1fr);
