@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Trap Tap app icon">
+  <rect width="512" height="512" rx="115" fill="#0F1119"/>
+  <g fill="#F9A051">
+    <path d="M256 118 L404 348 H108 Z"/>
+  </g>
+  <path d="M256 118 L404 348 H108 Z" fill="none" stroke="#F9A051" stroke-width="30" stroke-linejoin="round"/>
+  <g stroke="#7A8291" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M232 268 L196 252 L214 234 L192 222"/>
+  </g>
+  <rect x="238" y="158" width="36" height="128" rx="18" fill="#0F1119"/>
+  <circle cx="256" cy="318" r="24" fill="#0F1119"/>
+  <circle cx="256" cy="103" r="22" fill="#F9A051"/>
+  <circle cx="114" cy="348" r="22" fill="#F9A051"/>
+  <circle cx="398" cy="348" r="22" fill="#F9A051"/>
+</svg>
